@@ -1,0 +1,68 @@
+.reward_card {
+  width: 280px;
+  position: relative;
+  display: flex;
+  text-decoration: none !important;
+  color: var(--font-color) !important;
+  background: var(--card-bg);
+  align-items: center;
+  border: 1px solid #e0e3ed;
+  border-radius: 12px;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  transition: 0.3s;
+}
+.reward_card:hover {
+  background: #4976f5;
+  scale: 1.02;
+  color: #fff !important;
+}
+.reward_card:hover .isFriends {
+  transform: translate(100%);
+}
+.reward_card .reward_info {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  flex: 1;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.reward_card .reward_info p {
+  margin: 0 !important;
+}
+.reward_card .reward_info .reward_name {
+  font-weight: bold;
+  font-size: 21px;
+}
+.reward_card .reward_info .reward_bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.reward_card .reward_info .reward_bottom .reward_money svg {
+  margin-right: 3px;
+}
+.reward_card .reward_info .reward_bottom span.reward_time {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.reward_card>img,
+.reward_card>svg {
+  width: 65px !important;
+  height: 65px !important;
+  object-fit: cover;
+  border-radius: 50% !important;
+  margin: 0 !important;
+}
+.reward_card .isFriends {
+  position: absolute;
+  transition: 0.3s;
+  right: 0;
+  top: 0;
+  background: #4976f5;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 0 0 0 10px;
+}
